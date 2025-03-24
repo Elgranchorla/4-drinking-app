@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "183829261962",
+    "project_id": "drinkingapp-84ac5",
+    "storage_bucket": "drinkingapp-84ac5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:183829261962:android:31766e0d17924534f18773",
+        "android_client_info": {
+          "package_name": "com.example.u_4drinking_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5D15XD86l2iLY3rwS1eTwrrnabLMzbQw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
