@@ -1,0 +1,200 @@
+{
+  "wines": [
+    {
+      "id": "wine_1",
+      "name": "Tempranillo Reserva 2019",
+      "type": "tinto",
+      "winery": "Bodegas Torres",
+      "intensity": "media",
+      "sweetness": "seco",
+      "price": 14.90,
+      "pairings": ["carnes", "quesos curados"],
+      "tastingNotesSummary": "Aromas de frutas rojas, madera y especias.",
+      "imageUrl": "https://ejemplo.com/tempranillo.jpg"
+    },
+    {
+      "id": "wine_2",
+      "name": "Albariño Rías Baixas 2022",
+      "type": "blanco",
+      "winery": "Pazo de Señorans",
+      "intensity": "ligera",
+      "sweetness": "seco",
+      "price": 12.50,
+      "pairings": ["mariscos", "pescados"],
+      "tastingNotesSummary": "Notas cítricas y florales, fresco en boca.",
+      "imageUrl": "https://ejemplo.com/albarino.jpg"
+    },
+    {
+      "id": "wine_3",
+      "name": "Anna Brut Reserva",
+      "type": "espumoso",
+      "winery": "Codorníu",
+      "intensity": "media",
+      "sweetness": "semi-seco",
+      "price": 10.50,
+      "pairings": ["postres", "quesos suaves"],
+      "tastingNotesSummary": "Caramelo, café recién molido, frutos secos, tostado.",
+      "imageUrl": "https://ejemplo.com/anna.jpg"
+    }
+  ],
+  "shops": [
+    {
+      "id": "shop_1",
+      "name": "Tienda Online del Vino",
+      "type": "online",
+      "url": "https://ejemplo.com/tempranillo-reserva"
+    },
+    {
+      "id": "shop_2",
+      "name": "Vinoteca Central",
+      "type": "física",
+      "location": "Calle Mayor 123, Madrid, España",
+      "phone": "+34 910 000 111",
+      "hours": "10:00 - 21:00"
+    },
+    {
+      "id": "shop_3",
+      "name": "Bodega Galicia",
+      "type": "online",
+      "url": "https://ejemplo.com/albarino"
+    },
+    {
+      "id": "shop_4",
+      "name": "La Champañería",
+      "type": "física",
+      "location": "Carrer de la Cava Baja 77, Barcelona",
+      "phone": "+34 931 123 456",
+      "hours": "11:00 - 22:00"
+    },
+    {
+      "id": "shop_5",
+      "name": "Cavas Online",
+      "type": "online",
+      "url": "https://ejemplo.com/anna"
+    }
+  ],
+  "wineShops": [
+    { "wineId": "wine_1", "shopId": "shop_1" },
+    { "wineId": "wine_1", "shopId": "shop_2" },
+    { "wineId": "wine_2", "shopId": "shop_3" },
+    { "wineId": "wine_3", "shopId": "shop_4" },
+    { "wineId": "wine_3", "shopId": "shop_5" }
+  ],
+  "tastingNotes": [
+    {
+      "wineId": "wine_1",
+      "tastingDate": "2014-12-03",
+      "winery": "García Carrión",
+      "region": "D.O.Ca. Rioja",
+      "vintage": 2010,
+      "grapeVarieties": ["Tempranillo", "Garnacha", "Graciano"],
+      "visual": "Capa media, rojo picota, limpio",
+      "nose": "Confitura de frutas maduras, canela, vainilla, limpia, toques alcohólicos",
+      "palate": "Astringente, ácido, poca persistencia en boca, con un retronasal poco marcado con notas a tostado y canela",
+      "foodPairing": "Carnes rojas, asados y tapas",
+      "servingTemp": 16,
+      "style": "Crianza"
+    },
+    {
+      "wineId": "wine_3",
+      "tastingDate": "2014-12-07",
+      "winery": "Codorníu",
+      "region": "D.O. Cava",
+      "vintage": 2014,
+      "grapeVarieties": [],
+      "visual": "Dorado con reflejos verdosos, limpio, brillante, burbuja media",
+      "nose": "Caramelo, café recién molido, frutos secos, tostado",
+      "palate": "Carbónico casi imperceptible, compota de frutas, persistente, poco ácido, tostado, amplio",
+      "foodPairing": "Postres, quesos suaves",
+      "servingTemp": 7,
+      "style": "Espumoso"
+    }
+  ],
+  "questions": [
+    {
+      "question": "¿Qué tipo de vino prefieres?",
+      "type": "single_choice",
+      "options": ["tinto", "blanco", "espumoso"]
+    },
+    {
+      "question": "¿Qué nivel de dulzura te gusta?",
+      "type": "single_choice",
+      "options": ["seco", "semi-seco", "dulce"]
+    },
+    {
+      "question": "¿Con qué acompañarás el vino?",
+      "type": "single_choice",
+      "options": ["carnes", "pescados", "quesos", "postres"]
+    }
+  ],
+  "users": [
+    {
+      "uid": "user_demo_1",
+      "email": "ana@example.com",
+      "displayName": "Ana García",
+      "birthYear": 1991,
+      "location": "Madrid",
+      "preferences": {
+        "sweetness": "seco",
+        "type": "tinto"
+      },
+      "favorites": ["wine_1", "wine_2"],
+      "responseHistory": [
+        {
+          "timestamp": "2024-07-26T10:15:00Z",
+          "answers": {
+            "type": "tinto",
+            "sweetness": "seco",
+            "pairing": "carnes"
+          },
+          "recommendedWine": "wine_1"
+        }
+      ],
+      "createdAt": "2024-07-25T09:00:00Z"
+    },
+    {
+      "uid": "user_demo_2",
+      "email": "luis@example.com",
+      "displayName": "Luis Pérez",
+      "birthYear": 1987,
+      "location": "Barcelona",
+      "preferences": {
+        "sweetness": "semi-seco",
+        "type": "espumoso"
+      },
+      "favorites": ["wine_3"],
+      "responseHistory": [
+        {
+          "timestamp": "2024-07-27T18:45:00Z",
+          "answers": {
+            "type": "blanco",
+            "sweetness": "semi-seco",
+            "pairing": "pescados"
+          },
+          "recommendedWine": "wine_3"
+        },
+        {
+          "timestamp": "2024-08-01T12:00:00Z",
+          "answers": {
+            "type": "espumoso",
+            "sweetness": "dulce",
+            "pairing": "postres"
+          },
+          "recommendedWine": "wine_4"
+        }
+      ],
+      "createdAt": "2024-07-26T15:30:00Z"
+    },
+    {
+      "uid": "user_demo_3",
+      "email": "maria@example.com",
+      "displayName": "María López",
+      "birthYear": 1995,
+      "location": "Sevilla",
+      "preferences": {},
+      "favorites": [],
+      "responseHistory": [],
+      "createdAt": "2024-07-30T08:15:00Z"
+    }
+  ]
+}
